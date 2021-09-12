@@ -9,15 +9,13 @@
 <body>
     <h1>php</h1>
     <?php
-        $name = "choch";
-        echo "안녕하세요".$name;
+        var_dump(2==1);
     ?>
 
     <h1>javaScript</h1>
 
     <script>
-        name = "choch"
-        document.write("안녕하세요" + name);
+        document.write(1==2);
     </script>
 </body>
 
