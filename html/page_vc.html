@@ -6,9 +6,10 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src = "http://192.168.56.102/script.js"></script>
 </head>
 
-<body>
+<body id ="target">
 
     <title> CHO Web </title>
 
@@ -23,7 +24,12 @@
             <li><a href = "http://192.168.56.102/page_op.html">연산자</a></li>
         </ol>
     </nav>
-    
+
+    <div id = "control">
+        <input type="button" value="white" onclick="document.getElementById('target').className = 'white'"/>
+        <input type="button" value="black" onclick="document.getElementById('target').className = 'black'"/>
+    </div>
+
     <article>
 
         <h1> 변수와 상수란? </h1>

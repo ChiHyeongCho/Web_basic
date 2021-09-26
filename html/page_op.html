@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id ="target">
 
     <title> CHO Web </title>
 
@@ -24,6 +24,11 @@
         </ol>
     </nav>
     
+    <div id = "control">
+        <input type="button" value="white" onclick="document.getElementById('target').className = 'white'"/>
+        <input type="button" value="black" onclick="document.getElementById('target').className = 'black'"/>
+    </div>
+
     <article>
 
         <h1> 연산자란? </h1>

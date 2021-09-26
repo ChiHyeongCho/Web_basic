@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://192.168.56.102/php/style.css">
 </head>
 
 <body id ="target">
@@ -13,14 +13,14 @@
     <title> CHO Web </title>
 
     <header>
-        <h1> <a href ="http://192.168.56.102"> Cho's HomePage </a> </h1>
+        <h1> <a href ="http://192.168.56.102/php/index.php"> Cho's HomePage </a> </h1>
     </header>
 
     <nav>
         <ol>
-            <li><a href = "http://192.168.56.102/page_javascript.html">javaScrpit란?</a></li>
-            <li><a href = "http://192.168.56.102/page_vc.html">변수와 상수</a></li>
-            <li><a href = "http://192.168.56.102/page_op.html">연산자</a></li>
+            <?php
+            echo file_get_contents("list.txt");
+            ?>
         </ol>
     </nav>
 
@@ -30,11 +30,12 @@
     </div>
 
     <article>
-
-        <h1> Main HomePage </h1>
-
-        webserver에 대한 내용을 담고 있는 페이지입니다.
-
+        <?php
+        if (empty($_GET['id']) == false)
+        {
+            echo file_get_contents($_GET['id'].".txt");
+        }
+        ?>
     </article>
 
 </body>

@@ -12,24 +12,26 @@
 
     <script>
        
-       function a()
+       function a(input)
        {
-           document.write("Hello, Function");
+          return input + 1;
        }
 
-       a();
+       document.write(a(6));
+       prompt("비밀번호를 입력해주세요" + a(6));
 
     </script>
 
     <h1>php</h1>
 
     <?php
-      function a()
+      function a($input)
       {
-        echo "Hello php function";
+
+        return $input + 1;
       }
 
-      a();
+      echo a(5);
     ?>
 
 
