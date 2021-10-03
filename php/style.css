@@ -1,3 +1,27 @@
+header{
+    border-bottom: 2px solid gray;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+header img{
+    float: right;
+    height: 100px;
+    padding-top: 15px;
+}
+
+header h1 a:link{
+    text-decoration: none;
+    color:black;
+}
+
+header h1 a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+
 body.white{
     background-color: white;
     color:black;
@@ -8,30 +32,51 @@ body.black{
     color: white;
 }
 
-header{
-    border-bottom: 2px solid gray;
-    padding-left:20px;
-    padding-bottom: 20px;
-    font-size: 20px;
-}
-
 nav{
-    width: 200px;
+    width: 250px;
     float: left;
     border-right: 2px solid gray;
     height: 600px;
 }
 
 nav ol{
-    list-style: none;
+    list-style:square;
+    text-decoration: none;
+}
+
+nav ol li{
+    padding-bottom: 15px;
+}
+
+nav ol li a:link{
+    text-decoration: none;
+    color:black;
+}
+
+nav ol li a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+nav ol li a:active{
+    text-decoration-line: none;
+    color:green;
 }
 
 article{
     float: left;
     padding-left: 20px;
     padding-top: 20x;
+    font-size: 15px;
 }
 
 #control{
     float: right;
+    float: top;
+    margin: 10px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 250px 1fr;
 }
